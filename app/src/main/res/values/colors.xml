@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button_orange_background" type="color">#FFFF8400</item>
+    <item name="button_blue_background" type="color">#FF3885E7</item>
+    <item name="text_color_white" type="color">#FFFFFFFF</item>
+</resources>

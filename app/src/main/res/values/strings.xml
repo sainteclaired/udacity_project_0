@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ProjectZero</string>
+    <string name="text_view_home_title">My Nanodegree Apps!</string>
+
+    <string name="button_spotify_project">Spotify Streamer</string>
+    <string name="button_scores_project">Football Scores App</string>
+    <string name="button_library_project">Library App</string>
+    <string name="button_bigger_project">Build it Bigger</string>
+    <string name="button_reader_project">XYZ Reader</string>
+    <string name="button_capstone_project">Capstone</string>
+
+    <string name="toast_text_spotify">Launch the Spotify Streamer</string>
+    <string name="toast_text_football_scores">Launch the football scores app</string>
+    <string name="toast_text_library">Launch the library app</string>
+    <string name="toast_text_build_it">Launch the build it bigger app</string>
+    <string name="toast_text_reader">Launch the XYZ reader app</string>
+    <string name="toast_text_capstone">Launch the capstone app</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
