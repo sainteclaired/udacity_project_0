@@ -41,6 +41,17 @@ public class LaunchActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+        mSpotifyButton.setOnClickListener(null);
+        mScoresButton.setOnClickListener(null);
+        mLibraryButton.setOnClickListener(null);
+        mBuildItButton.setOnClickListener(null);
+        mXyzButton.setOnClickListener(null);
+        mCapstoneButton.setOnClickListener(null);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_launch, menu);
@@ -63,6 +74,7 @@ public class LaunchActivity extends AppCompatActivity {
     }
 
     private static class DisplayToastClickListener implements View.OnClickListener {
+        private static Toast sToast;
         private final Context mContext;
         private final String mDisplayText;
 
@@ -73,7 +85,11 @@ public class LaunchActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(mContext, mDisplayText, Toast.LENGTH_SHORT).show();
+            if (sToast != null) {
+                sToast.cancel();
+            }
+            sToast = Toast.makeText(mContext, mDisplayText, Toast.LENGTH_SHORT);
+            sToast.show();
         }
     }
 }
